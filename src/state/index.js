@@ -3,6 +3,7 @@ export default {
   isNavbarMenuActive: false,
   username: '',
   delegations: [],
+  dynamicGlobalProperties: {},
 }
 
 

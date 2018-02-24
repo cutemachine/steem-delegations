@@ -1,0 +1,26 @@
+{
+  "name": "steem-delegations",
+  "version": "1.0.0",
+  "description": "Steem Delegations with Steem JS",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./"
+  },
+  "repository": "https://github.com/cutemachine/steem-delegations.git",
+  "author": "jo@cutemachine.com",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.6.2"
+  },
+  "dependencies": {
+    "hyperapp": "^1.1.2",
+    "@hyperapp/router": "^0.4.1",
+    "babel-polyfill": "^6.26.0",
+    "classnames": "^2.2.5",
+    "steem": "^0.7.1"
+  }
+}

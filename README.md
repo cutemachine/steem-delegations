@@ -16,7 +16,7 @@ This is a project which demonstrates how one can get Steem delegations data from
 
 ## Getting Started
 
-It is very simple to build your project on top of this starter. Just clone the starter in a folder with your project's name. Then remove the git history to be able to initialize your own Git repository. Then install the dependencies with `yarn`. When the installation has finished you can run the new app with `yarn start`. These are the steps in more detail:
+Just clone the project. Then install the dependencies with `yarn`. When the installation has finished you can run the new app with `yarn start`. These are the steps in more detail:
 
     git clone https://github.com/cutemachine/steem-delegations.git
     cd steem-delegations

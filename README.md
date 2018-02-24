@@ -5,7 +5,7 @@ This is a project which demonstrates how one can get Steem delegations data from
 
 ## Technologies Used
 
-- [SteemJS—Steem.js the official JavaScript library for the Steem blockchain)
+- [SteemJS—Steem.js the official JavaScript library for the Steem blockchain](https://github.com/steemit/steem-js)
 - [Next generation JavaScript](https://babeljs.io')
 - [Hyperapp—1 KB JavaScript library for building frontend applications](https://hyperapp.js.org')
 - [Hyperapp Router—Declarative routing for Hyperapp using the History API](https://github.com/hyperapp/router')

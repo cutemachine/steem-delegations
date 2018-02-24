@@ -23,10 +23,12 @@ Just clone the project. Then install the dependencies with `yarn`. When the inst
     yarn
     yarn start
 
+When the dev server started you can point your broswer to the URL given in the Terminal. Normally this is [localhost:1234](http:localhost:1234).
+
 
 ## Demo
 
-[You can see a running version of steem-delegations by following this link](#).
+[You can see a running version of steem-delegations by following this link](http://flamboyant-raman-46bb3b.netlify.com).
 
 
 ## How To Contribute

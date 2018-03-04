@@ -14,6 +14,24 @@ export default ({state, actions}) => {
       </tr>
     )
   })
+
+  let delegationHistoryItems = state.delegationHistory.map((item, index) => {
+    let APR = (item.type === 'DELEGATION')
+      ? 'n/a'
+      : (unitString2Number(item.amount) / item.delegatedSteemPower * 100 * 365).toFixed(2)
+    return (
+      <tr>
+        <td>{item.type}</td>
+        <td>{item.from}</td>
+        <td>{item.to}</td>
+        <td>{item.delegatedSteemPower}</td>
+        <td>{item.amount}</td>
+        <td>{APR}</td>
+        <td>{item.timestamp}</td>
+      </tr>
+    )
+  })
+
   return (
     <section class='section'>
       <div class='container'>
@@ -58,6 +76,25 @@ export default ({state, actions}) => {
               { delegationItems }
             </tbody>
           </table>
+          <div class='container'>
+            <h2 class='title'>Delegation History</h2>
+            <table class='table is-hoverable is-fullwidth'>
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>From</th>
+                  <th>To</th>
+                  <th>Delegated SP</th>
+                  <th>Amount</th>
+                  <th>APR</th>
+                  <th>Timestamp</th>
+                </tr>
+              </thead>
+              <tbody>
+                { delegationHistoryItems }
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </section>

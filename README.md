@@ -26,6 +26,24 @@ Just clone the project. Then install the dependencies with `yarn`. When the inst
 When the dev server started you can point your broswer to the URL given in the Terminal. Normally this is [localhost:1234](http:localhost:1234).
 
 
+## Tags
+
+This tutorial has three parts. You can find the three parts by following the links:
+
+- [Steem Delegations Tutorial Part One](https://steemit.com/utopian-io/@cutemachine/steem-delegations-tutorial-part-one)
+- [Steem Delegations Tutorial Part Two](https://steemit.com/utopian-io/@cutemachine/steem-delegations-tutorial-part-two)
+- [Steem Delegations Tutorial Part Three](https://steemit.com/utopian-io/@cutemachine/steem-delegations-tutorial-part-three)
+
+
+If you want to follow along you can check out the tagged sources. There are three tags:
+
+`git tag`
+
+part1
+part2
+part3
+
+
 ## Demo
 
 [You can see a running version of steem-delegations by following this link](http://flamboyant-raman-46bb3b.netlify.com).

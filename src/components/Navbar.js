@@ -15,10 +15,9 @@ export default ({ isNavbarMenuActive, toggleNavbarMenu }) => (
       </div>
     </div>
     <div class={`navbar-menu ${isNavbarMenuActive ? 'is-active' : ''}`}>
-      {/* <div class='navbar-start'> */}
-      {/*   <Link class='navbar-item' to='/components'>Components</Link> */}
-      {/*   <Link class='navbar-item' to='/app'>App</Link> */}
-      {/* </div> */}
+      <div class='navbar-start'>
+        <Link class='navbar-item' to='/delegate'>Delegate</Link>
+      </div>
       <hr />
       <div class='navbar-end'>
         <div class='navbar-item'>

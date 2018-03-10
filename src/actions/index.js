@@ -54,6 +54,11 @@ export default {
     set: message => state => ({ message }),
     clear: () => state => ({ message: '' }),
   },
+  delegationForm: {
+    changeDelegator: value => ({ delegator: value }),
+    changeDelegatee: value => ({ delegatee: value }),
+    changeAmount: value => ({ amount: value })
+  },
   location: location.actions,
   toggleNavbarMenu: () => state => ({ isNavbarMenuActive: !state.isNavbarMenuActive }),
   changeUsername: (value) => (state, actions) => {
@@ -63,6 +68,15 @@ export default {
     actions.requestDelegations(state.username)
   },
   setDynamicGlobalProperties: obj => state => ({ dynamicGlobalProperties: obj }),
+  requestDynamicGlobalProperties: () => async (state, actions) => {
+    try {
+      const dynamicGlobalProperties = await steem.api.getDynamicGlobalPropertiesAsync()
+      if (!dynamicGlobalProperties) { throw new Error('Sorry, could not get dynamic global properties.')}
+      actions.setDynamicGlobalProperties(dynamicGlobalProperties)
+    } catch (error) {
+      actions.error.set(error.message)
+    }
+  },
   setDelegations: arr => state => ({ delegations: arr }),
   requestDelegations: (username) => async (state, actions) => {
     try {
